@@ -3,15 +3,10 @@
  *
  * AddContent class
 **/
-const EditContent = require.main.require('./kldit/base/controller/EditContent');
+const EditContent = require('./EditContent');
 
 module.exports = class AddContent extends EditContent
 {
-    constructor(context)
-    {
-        super(context);
-    }
-
     init()
     {
         super.init();

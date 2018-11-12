@@ -1,4 +1,4 @@
-const mvc = require.main.require( './kldit/lib/mvc' );
+const mvc = require.main.require( '@kldit/mvc' );
 
 module.exports = 
 
@@ -9,5 +9,9 @@ module.exports =
  */
 class Home extends mvc.BaseController
 {
-    
+    index( ctx )
+    {
+        var pjson = require('../../package.json');
+        ctx.body = `kldit::cms\nversion ${pjson.version}`;
+    }
 }

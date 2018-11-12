@@ -7,15 +7,10 @@
 //That is not an db update. It updates the fields, just like in
 //validation, except for validation
 //public function
-const CMS = require.main.require('./kldit/lib/CMS');
+const CMS = require('@kldit/cms/lib/CMS');
 
 module.exports = class EditContent extends CMS
 {
-    constructor(context)
-    {
-        super(context);
-    }
-
     init()
     {
         super.init();

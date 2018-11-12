@@ -6,9 +6,9 @@
 //load_lib_file("cms/fields");
 //load_lib_file("cms/request");
 
-const { MQL, MQLtoMySQL } = require.main.require('mql-mysql');
-const EditModel = require.main.require('./kldit/base/model/EditModel');
-const Request = require.main.require('./kldit/lib/Request');
+const { MQL, MQLtoMySQL } = require('mql-mysql');
+const EditModel = require('./EditModel');
+const Request = require('@kldit/cms/lib/Request');
 
 module.exports = class AddModel extends EditModel
 {

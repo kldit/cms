@@ -4,9 +4,9 @@
 //
 //
 
-const { MQL, MQLtoMySQL } = require.main.require('mql-mysql');
-const { BaseModel } = require.main.require('./kldit/lib/mvc');
-const Request = require.main.require('./kldit/lib/Request');
+const { MQL, MQLtoMySQL } = require('mql-mysql');
+const { BaseModel } = require('@kldit/mvc');
+const Request = require('@kldit/cms/lib/Request');
 
 module.exports = class DeleteModel extends BaseModel
 {

@@ -1,4 +1,4 @@
-const mvc = require.main.require( './kldit/lib/mvc' );
+const mvc = require( '@kldit/mvc' );
 const sha1 = require('sha1');
 
 /**
@@ -8,11 +8,6 @@ const sha1 = require('sha1');
  */
 module.exports = class Session extends mvc.BaseController
 {
-    constructor( context )
-    {
-        super( context );
-    }
-    
     init()
     {
         this.loadModel( 'Session' );
@@ -37,6 +32,7 @@ module.exports = class Session extends mvc.BaseController
     
     async token( ctx )
     {
+        console.log( this.model );
         const token = await this.model.session.getUser(
             ctx,
             ctx.request.body.username,

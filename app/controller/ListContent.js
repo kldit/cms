@@ -4,17 +4,12 @@
  * ListContent class
  */
 
-const CMS = require.main.require('./kldit/lib/CMS');
-const EditContent = require.main.require('./kldit/base/controller/EditContent');
+const CMS = require('@kldit/cms/lib/CMS');
+const EditContent = require('./EditContent');
 
 // ListContent could be just List, but it's a reserved word
 module.exports = class ListContent extends CMS
 {
-    constructor(ctx)
-    {
-        super(ctx);
-    }
-
     init()
     {
         super.init();

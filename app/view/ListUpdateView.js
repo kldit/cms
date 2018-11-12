@@ -1,5 +1,5 @@
-const CMS = require.main.require('./kldit/lib/CMS');
-const LayoutObject = require.main.require('./kldit/lib/LayoutObject');
+const CMS = require('@kldit/cms/lib/CMS');
+const LayoutObject = require('@kldit/cms/lib/LayoutObject');
 
 module.exports = async function (cms)
 {

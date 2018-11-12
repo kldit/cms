@@ -6,15 +6,10 @@
 
 //ListContent could be just List, but it's a reserved word
 
-const CMS = require.main.require('./kldit/lib/CMS');
+const CMS = require('@kldit/cms/lib/CMS');
 
 module.exports = class DeleteContent extends CMS
 {
-    constructor(context) //$this->header['pageTitle']  = ' - Home';
-    {
-        super(context);
-    }
-
     init()
     {
         super.init();

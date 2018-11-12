@@ -1,5 +1,5 @@
-const CMS = require.main.require( './kldit/lib/CMS' );
-const fs   = require('fs');
+const CMS = require( '@kldit/cms/lib/CMS' );
+const fs = require('fs');
 
 /**
  * @author Orlando Leite
@@ -8,11 +8,6 @@ const fs   = require('fs');
  */
 module.exports = class Menu extends CMS
 {
-    constructor( context )
-    {
-        super( context );
-    }
-    
     init()
     {
         super.init();

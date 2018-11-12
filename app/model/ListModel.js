@@ -1,6 +1,6 @@
-const mvc = require.main.require('./kldit/lib/mvc');
+const mvc = require('@kldit/mvc');
 const { MQL, MQLtoMySQL } = require('mql-mysql');
-const Request = require.main.require('./kldit/lib/Request');
+const Request = require('@kldit/cms/lib/Request');
 const util = require('util');
 
 /**

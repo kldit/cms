@@ -5,17 +5,12 @@
  */
  
 //ListContent could be just List, but it's a reserved word
-const CMS = require.main.require('./kldit/lib/CMS');
-const util = require.main.require('./kldit/lib/util');
+const CMS = require('@kldit/cms/lib/CMS');
+const util = require('@kldit/mvc/lib/util');
 const fs = require('fs');
 
 module.exports = class Library extends CMS
 {
-    constructor(context)
-    {
-        super(context);
-    }
-
     alist() //$types = @$_POST['types'];
     //		
     //		// GET FILES IN FOLDER //
@@ -192,7 +187,7 @@ module.exports = class Library extends CMS
         super.init();
 
         Library.LIB_PATH = process.env.STORAGE_PATH + "/library/";
-        // console.log( Library.LIB_PATH );
+        // console.log( process.env.STORAGE_PATH );
         
         
         if(!fs.existsSync(process.env.STORAGE_PATH) || !fs.lstatSync(process.env.STORAGE_PATH).isDirectory())

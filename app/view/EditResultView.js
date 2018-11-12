@@ -1,5 +1,5 @@
-const util = require.main.require('./kldit/lib/util');
-const LayoutObject = require.main.require('./kldit/lib/LayoutObject');
+const util = require('@kldit/mvc/lib/util');
+const LayoutObject = require('@kldit/cms/lib/LayoutObject');
 
 module.exports = async function (cms)
 {

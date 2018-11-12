@@ -1,4 +1,4 @@
-const util = require.main.require('./kldit/lib/util');
+const util = require('@kldit/mvc/lib/util');
 
 module.exports = function (cms)
 {

@@ -1,5 +1,5 @@
-const mvc = require.main.require('./kldit/lib/mvc');
-const Request = require.main.require('./kldit/lib/Request');
+const mvc = require('@kldit/mvc');
+const Request = require('@kldit/cms/lib/Request');
 const { MQL, MQLtoMySQL } = require('mql-mysql');
 const util = require('util');
 /**
@@ -36,8 +36,9 @@ module.exports = class EditModel extends mvc.BaseModel
 
         try
         {
-            var [rows, fields] = await MQLtoMySQL.select(mql, db);
             // console.log( JSON.stringify( mql, null, "\t" ) );
+            var [rows, fields] = await MQLtoMySQL.select(mql, db);
+            // 
             var result = {
                 item: rows.length > 0 ? rows[0] : undefined,
                 request: request

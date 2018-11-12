@@ -1,4 +1,4 @@
-const mvc = require.main.require( './kldit/lib/mvc' );
+const mvc = require( '@kldit/mvc' );
 const sha1 = require('sha1');
 const formatter = require('date-and-time');
 const MySQL = require('ext-mysql');
