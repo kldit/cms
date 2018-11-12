@@ -1,6 +1,6 @@
 {
   "name": "@kldit/cms",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A CMS Framework for @kldit/mvc",
   "main": "index.js",
   "directories": {
@@ -25,6 +25,6 @@
   },
   "homepage": "https://github.com/kldit/cms#readme",
   "dependencies": {
-    "@kldit/mvc": "^0.1.1"
+    "@kldit/mvc": "^1.1.0"
   }
 }
